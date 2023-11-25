@@ -1,0 +1,21 @@
+What each day has:
+
+1. Chistmas Countdown Time !!! (intro screen), christmas cat videos -> Easy
+2. 
+3. Pong game (with candy instead of ball)?? -> Hard
+4. Christmas Poem for Georgie -> Easy
+5. Cool facts on Lizards (maybe throw something in about christmas Lizards) -> Easy
+6. Memes of being cold out -> Easy
+7. Webcam grab the candy game (read hand position and based off of hand movement it controls movement of a dot on the screen, used to chase another dot) -> Big hard
+8. Cold vs. hot Georgie (time to click each image of a sweater and heater, or of the beach) -> Medium
+9. A Bunch of Christmas Lights -> Easy
+10. Photos of pretty places at Christmas -> Easy
+11. Passing Picture Game (is that a goat?) => Classifies goat and other images =>Upload photos ->Medium
+12. Link to gift cards??, with a random date selector -> Medium
+
+
+Structure of the APP:
+Have main screen: Before countdown starts have it just say countdown has not started yet
+Once countdown starts have: Big button saying the day, with wreaths and stuff around it
+When button is clicked it brings up a pop up for the day's activity, there is a quick little tune (10 seconds or so) when the button is clicked
+Every daily activity happens in the pop up
