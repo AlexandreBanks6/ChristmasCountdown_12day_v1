@@ -1,0 +1,43 @@
+#include "day1window.h"
+#include "ui_day1window.h"
+#include <QMediaPlayer>
+#include <QVideoWidget>
+#include <QtMultimedia>
+#include <QDebug>
+
+
+
+Day1Window::Day1Window(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::Day1Window)
+{
+    ui->setupUi(this);
+}
+
+Day1Window::~Day1Window()
+{
+    delete ui;
+}
+
+void Day1Window::on_play_day1_clicked()
+{
+    QMediaPlayer* player=new QMediaPlayer;
+    QAudioOutput* audioOutput = new QAudioOutput;
+    QVideoWidget* vw=new QVideoWidget;
+
+    player->setAudioOutput(audioOutput);
+    player->setVideoOutput(vw);
+
+    player->setSource(QUrl::fromLocalFile("../Videos/video1.mp4"));
+    qDebug() << player->mediaStatus();
+
+    audioOutput->setVolume(50);
+    vw->setGeometry(100,100,300,400);
+    vw->show();
+    player->play();
+
+
+
+}
+
+
