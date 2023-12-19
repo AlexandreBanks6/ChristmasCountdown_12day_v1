@@ -9,6 +9,28 @@ Day1Window::Day1Window(QWidget *parent) :
     ui(new Ui::Day1Window)
 {
     ui->setupUi(this);
+    ui->video_title->setStyleSheet("QLabel { background-color : lightblue}");
+    ui->video_title->setText("<font color='white'>Day1: Funny Cat Videos!!!!");
+    //Setting up background
+
+    QPixmap bkgnd("../BackgroundImages/day1_background.jpg");
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Window, bkgnd);
+    this->setPalette(palette);
+
+    //Setting up title colour
+    //QPalette palette_2 = ui->video_title->palette();
+    //palette_2.setColor(ui->video_title->backgroundRole(), Qt::blue);
+    //palette_2.setColor(ui->video_title->foregroundRole(), Qt::blue);
+    //ui->video_title->setPalette(palette_2);
+
+    //QLabel* video_title=new QLabel;
+
+
+
+
+    //Setting up video stuff
 
 
     player=new QMediaPlayer(this);
@@ -64,43 +86,43 @@ QString Day1Window::catvideo_display(int videonum)
     switch(videonum)
     {
     case(1):
-        videoTitle="Video 1: Cat wants his ball! :)";
+        videoTitle="<font color='white'>Video 1: Cat wants his ball! :)";
         break;
     case(2):
-        videoTitle="Video 2: Found a cat criminal";
+        videoTitle="<font color='white'>Video 2: Found a cat criminal";
         break;
     case(3):
-        videoTitle="Video 3: Party cat! Woot-woot.";
+        videoTitle="<font color='white'>Video 3: Party cat! Woot-woot.";
         break;
     case(4):
-        videoTitle="Video 4: Fuzzy cat boyz!";
+        videoTitle="<font color='white'>Video 4: Fuzzy cat boyz!";
         break;
     case(5):
-        videoTitle="Video 5: Dancy cats!";
+        videoTitle="<font color='white'>Video 5: Dancy cats!";
         break;
     case(6):
-        videoTitle="Video 6: Just a super cute guy.";
+        videoTitle="<font color='white'>Video 6: Just a super cute guy.";
         break;
     case(7):
-        videoTitle="Video 7: Another cute one, with a cute meow!";
+        videoTitle="<font color='white'>Video 7: Another cute one, with a cute meow!";
         break;
     case(8):
-        videoTitle="Video 8: Wait for the last one lol.";
+        videoTitle="<font color='white'>Video 8: Wait for the last one lol.";
         break;
     case(9):
-        videoTitle="Video 9: Squishy cat!";
+        videoTitle="<font color='white'>Video 9: Squishy cat!";
         break;
     case(10):
-        videoTitle="Video 10: Garfield?";
+        videoTitle="<font color='white'>Video 10: Garfield?";
         break;
     case(11):
-        videoTitle="Video 11: Jumpy cat!";
+        videoTitle="<font color='white'>Video 11: Jumpy cat!";
         break;
     case(12):
-        videoTitle="Video 12: Kurt is a legend, and the narration is great!";
+        videoTitle="<font color='white'>Video 12: Kurt is a legend, and the narration is great!";
         break;
     default:
-        videoTitle="Not sure what video this is lol!";
+        videoTitle="<font color='white'>Not sure what video this is lol!";
         break;
     }
 

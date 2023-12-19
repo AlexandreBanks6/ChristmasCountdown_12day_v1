@@ -10,15 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     day1window.cpp \
+    day2window.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     day1window.h \
+    day2window.h \
     mainwindow.h
 
 FORMS += \
     day1window.ui \
+    day2window.ui \
     mainwindow.ui
 
 # Default rules for deployment.

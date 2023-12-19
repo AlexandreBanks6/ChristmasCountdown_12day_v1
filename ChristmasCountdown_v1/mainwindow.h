@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "day1window.h"
+#include "day2window.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,5 +23,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Day1Window *day1_window;
+    day2window *day2_window;
 };
 #endif // MAINWINDOW_H
