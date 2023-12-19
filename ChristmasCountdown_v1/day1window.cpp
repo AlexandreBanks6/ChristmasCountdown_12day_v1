@@ -17,8 +17,8 @@ Day1Window::Day1Window(QWidget *parent) :
 
     audioOutput = new QAudioOutput(this);
     vw=new QVideoWidget(this);
-
-    ui->gridLayout->addWidget(vw,1,0,-1,-1);
+    ui->gridLayout_3->addWidget(vw,1,0,-1,-1);
+    //vw->lower();
     QSize size=this->size();
     //qDebug()<<size.width();
     vw->setGeometry(0,int(size.height()*0.1),size.width(),200);
@@ -36,37 +36,152 @@ Day1Window::~Day1Window()
     delete ui;
 }
 
-void Day1Window::on_play_day1_clicked()
+QString Day1Window::day_extension(int day)
 {
-
-
-
-    if((player->playbackState()==QMediaPlayer::PausedState)){
-        player->play();
-
+    QString dayExtension;
+    switch(day)
+    {
+    case(1):
+        dayExtension="st";
+        break;
+    case(2):
+        dayExtension="nd";
+        break;
+    case(3):
+        dayExtension="rd";
+        break;
+    default:
+        dayExtension="th";
+        break;
     }
-    else{
-        player->setSource(QUrl::fromLocalFile("../Videos/video1.mp4"));
+
+    return dayExtension;
+}
+
+QString Day1Window::catvideo_display(int videonum)
+{
+    QString videoTitle;
+    switch(videonum)
+    {
+    case(1):
+        videoTitle="Video 1: Cat wants his ball! :)";
+        break;
+    case(2):
+        videoTitle="Video 2: Found a cat criminal";
+        break;
+    case(3):
+        videoTitle="Video 3: Party cat! Woot-woot.";
+        break;
+    case(4):
+        videoTitle="Video 4: Fuzzy cat boyz!";
+        break;
+    case(5):
+        videoTitle="Video 5: Dancy cats!";
+        break;
+    case(6):
+        videoTitle="Video 6: Just a super cute guy.";
+        break;
+    case(7):
+        videoTitle="Video 7: Another cute one, with a cute meow!";
+        break;
+    case(8):
+        videoTitle="Video 8: Wait for the last one lol.";
+        break;
+    case(9):
+        videoTitle="Video 9: Squishy cat!";
+        break;
+    case(10):
+        videoTitle="Video 10: Garfield?";
+        break;
+    case(11):
+        videoTitle="Video 11: Jumpy cat!";
+        break;
+    case(12):
+        videoTitle="Video 12: Kurt is a legend, and the narration is great!";
+        break;
+    default:
+        videoTitle="Not sure what video this is lol!";
+        break;
+    }
+
+    return videoTitle;
+
+}
+
+void Day1Window::on_start_day1_clicked()
+{
+    VideoNumber+=1;
+    player->stop();
+    qInfo()<<QString::number(VideoNumber);
+
+    if(VideoNumber<=NUMBEROFVIDEOS){
+        disconnect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
+        disconnect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
+        //QString vid_file="../Videos/video"+std::to_string(VideoNumber)+".mp4";
+        QString vid_file="../Videos/video"+QString::number(VideoNumber)+".mp4";
+
+        player=new QMediaPlayer(this);
+        audioOutput = new QAudioOutput(this);
+
+        player->setAudioOutput(audioOutput);
+        player->setVideoOutput(vw);
+
+        player->setSource(QUrl::fromLocalFile(vid_file));
         qDebug() << player->mediaStatus();
 
         audioOutput->setVolume(50);
+        player->setLoops(1);
         vw->show();
         player->play();
-        connect(player,&QMediaPlayer::playingChanged,this,&Day1Window::new_video);
+
         connect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
+        connect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
+
+
+        //Updating text on the start button
+
+        if(VideoNumber<NUMBEROFVIDEOS)
+        {
+            QString dayEtension=day_extension(VideoNumber+1);
+            QString newText="Start "+QString::number(VideoNumber+1)+dayEtension+" Video";
+
+            ui->start_day1->setText(newText);
+        }
+
+        else
+        {
+            QString newText="That's the end of the videos";
+
+            ui->start_day1->setText(newText);
+        }
+
+        //Updating the video title
+        QString videoTitle=catvideo_display(VideoNumber);
+        ui->video_title->setText(videoTitle);
+
 
     }
+
+
+
 
 
 }
 
+
+/*
 void Day1Window::new_video()
 {
     qInfo()<<player->playbackState();
+    qInfo()<<player->mediaStatus();
     //qInfo()<<QString::number(player->playbackState()==QMediaPlayer::PausedState);
 
-    if((player->playbackState()==QMediaPlayer::StoppedState)){
+    qInfo()<<QString::number(isPlaying);
+    qInfo()<<QString::number(isPaused);
+    if(false){
         disconnect(player,&QMediaPlayer::playingChanged,this,&Day1Window::new_video);
+        //disconnect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
+        //disconnect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
         VideoNumber+=1;
         player->stop();
         if(VideoNumber<3){
@@ -81,10 +196,12 @@ void Day1Window::new_video()
             qDebug() << player->mediaStatus();
 
             audioOutput->setVolume(50);
+            player->setLoops(1);
             vw->show();
             player->play();
-            connect(player,&QMediaPlayer::playingChanged,this,&Day1Window::new_video);
             connect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
+            connect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
+            connect(player,&QMediaPlayer::playingChanged,this,&Day1Window::new_video);
 
 
         }
@@ -92,4 +209,33 @@ void Day1Window::new_video()
 
 
 }
+*/
+
+
+/*
+void Day1Window::delay(int milliseconds)
+{
+    clock_t goal = milliseconds + clock();
+    while(goal>clock());
+    return;
+
+}
+*/
+
+
+//void Day1Window::on_play_day1_clicked()
+//{
+ //   isPlaying=true;
+ //   isPaused=false;
+  //  player->play();
+//}
+
+
+//void Day1Window::on_pause_day1_clicked()
+//{
+ //   isPlaying=false;
+ //   isPaused=true;
+ //   player->pause();
+
+//}
 

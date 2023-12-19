@@ -8,6 +8,8 @@
 #include <QDebug>
 #include <QGridLayout>
 #include <QGraphicsVideoItem>
+#include <ctime>
+
 
 namespace Ui {
 class Day1Window;
@@ -16,16 +18,26 @@ class Day1Window;
 class Day1Window : public QDialog
 {
     Q_OBJECT
-    int VideoNumber=1;
+    int VideoNumber=0;
+    bool isPlaying=true;
+    bool isPaused=false;
+    int NUMBEROFVIDEOS=12;
 
 
 public:
     explicit Day1Window(QWidget *parent = nullptr);
     ~Day1Window();
+    QString day_extension(int day);
+    QString catvideo_display(int videonum);
+    //void delay(int milliseconds);
 
 private slots:
-    void on_play_day1_clicked();
-    void new_video();
+    void on_start_day1_clicked();
+
+    //void new_video();
+    //void on_play_day1_clicked();
+
+    //void on_pause_day1_clicked();
 
 private:
     Ui::Day1Window *ui;
