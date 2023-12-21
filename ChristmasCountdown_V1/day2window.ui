@@ -36,7 +36,7 @@
           <enum>QFrame::Box</enum>
          </property>
          <property name="text">
-          <string>Can I take you on a date GT?</string>
+          <string>Day 2: Can I take you on a date GT?</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

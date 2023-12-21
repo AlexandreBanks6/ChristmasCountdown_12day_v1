@@ -1,9 +1,6 @@
 #include "day1window.h"
 #include "ui_day1window.h"
 
-
-
-
 Day1Window::Day1Window(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Day1Window)
@@ -13,8 +10,8 @@ Day1Window::Day1Window(QWidget *parent) :
     ui->video_title->setText("<font color='white'>Day1: Funny Cat Videos!!!!");
     //Setting up background
 
-    QPixmap bkgnd("../BackgroundImages/day1_background.jpg");
-    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPixmap bkgnd("../Resources/BackgroundImages/day1_background.jpg");
+    bkgnd = bkgnd.scaled(this->size(), Qt::KeepAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Window, bkgnd);
     this->setPalette(palette);
@@ -47,10 +44,6 @@ Day1Window::Day1Window(QWidget *parent) :
 
     player->setAudioOutput(audioOutput);
     player->setVideoOutput(vw);
-
-
-
-
 }
 
 Day1Window::~Day1Window()
@@ -139,8 +132,8 @@ void Day1Window::on_start_day1_clicked()
     if(VideoNumber<=NUMBEROFVIDEOS){
         disconnect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
         disconnect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
-        //QString vid_file="../Videos/video"+std::to_string(VideoNumber)+".mp4";
-        QString vid_file="../Videos/video"+QString::number(VideoNumber)+".mp4";
+        //QString vid_file="../Resources/Videos/video"+std::to_string(VideoNumber)+".mp4";
+        QString vid_file="../Resources/Videos/video"+QString::number(VideoNumber)+".mp4";
 
         player=new QMediaPlayer(this);
         audioOutput = new QAudioOutput(this);
@@ -183,81 +176,5 @@ void Day1Window::on_start_day1_clicked()
 
 
     }
-
-
-
-
-
 }
-
-
-/*
-void Day1Window::new_video()
-{
-    qInfo()<<player->playbackState();
-    qInfo()<<player->mediaStatus();
-    //qInfo()<<QString::number(player->playbackState()==QMediaPlayer::PausedState);
-
-    qInfo()<<QString::number(isPlaying);
-    qInfo()<<QString::number(isPaused);
-    if(false){
-        disconnect(player,&QMediaPlayer::playingChanged,this,&Day1Window::new_video);
-        //disconnect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
-        //disconnect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
-        VideoNumber+=1;
-        player->stop();
-        if(VideoNumber<3){
-            //QString vid_file="../Videos/video"+std::to_string(VideoNumber)+".mp4";
-            QString vid_file="../Videos/video"+QString::number(VideoNumber)+".mp4";
-            player=new QMediaPlayer(this);
-            audioOutput = new QAudioOutput(this);
-            player->setAudioOutput(audioOutput);
-            player->setVideoOutput(vw);
-
-            player->setSource(QUrl::fromLocalFile(vid_file));
-            qDebug() << player->mediaStatus();
-
-            audioOutput->setVolume(50);
-            player->setLoops(1);
-            vw->show();
-            player->play();
-            connect(ui->pause_day1,SIGNAL(clicked()),player,SLOT(pause()));
-            connect(ui->play_day1,SIGNAL(clicked()),player,SLOT(play()));
-            connect(player,&QMediaPlayer::playingChanged,this,&Day1Window::new_video);
-
-
-        }
-    }
-
-
-}
-*/
-
-
-/*
-void Day1Window::delay(int milliseconds)
-{
-    clock_t goal = milliseconds + clock();
-    while(goal>clock());
-    return;
-
-}
-*/
-
-
-//void Day1Window::on_play_day1_clicked()
-//{
- //   isPlaying=true;
- //   isPaused=false;
-  //  player->play();
-//}
-
-
-//void Day1Window::on_pause_day1_clicked()
-//{
- //   isPlaying=false;
- //   isPaused=true;
- //   player->pause();
-
-//}
 

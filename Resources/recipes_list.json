@@ -1,0 +1,169 @@
+{
+  "Breakfast": {
+    "French": [
+      "https://chefsavvy.com/french-toast-muffin-cups/",
+      "https://www.sweetspicykitchen.com/breakfast/french-breakfast-puffs/"
+    ],
+    "Japanese": [
+      "https://cookiesandcups.com/japanese-pancakes/",
+      "https://www.justonecookbook.com/onigiri-rice-balls/",
+      "https://cookeatshare.com/recipes/japanese-street-crepes-594178",
+      "https://www.justonecookbook.com/japanese-fruit-sandwich-fruit-sando/"
+    ],
+    "Thai": [
+      "https://importfood.com/recipes/recipe/1197-thai-congee-rice-porridge-pork",
+      "https://www.thespruceeats.com/coconut-pancakes-with-coconut-syrup-3217355",
+      "https://www.cdkitchen.com/recipes/recs/272/Thai-Donuts-Pa-Thong-Ko93558.shtml"
+    ],
+    "Indian": [
+      "https://www.indianveggiedelight.com/poha-recipe/",
+      "https://www.indianveggiedelight.com/instant-pot-vermicelli-upma-semiya-upma/",
+      "https://www.vegrecipesofindia.com/idli-recipe-how-to-make-soft-idlis/"
+    ],
+    "Mexican": [
+      "https://www.allrecipes.com/recipe/278681/chorizo-breakfast-bowls/",
+      "https://www.allrecipes.com/recipe/70749/migas-ii/",
+      "https://www.allrecipes.com/recipe/54865/breakfast-enchiladas/"
+    ],
+    "Canadian": [
+      "https://www.yummly.com/recipe/Canadian-Bacon-Bagels-1903346",
+      "https://www.yummly.com/recipe/Canadian-Bacon-Egg-Cups-2119872",
+      "https://www.yummly.com/recipe/Canadian-Bacon-Cup-Benedict-1261589"
+    ],
+    "Italian": [
+      "https://anitalianinmykitchen.com/italian-hot-chocolate/",
+      "https://kristineskitchenblog.com/classic-biscotti-recipe/",
+      "https://www.gourmetproject.net/sicilian-brioche-recipe/"
+    ],
+    "Chinese": [
+      "https://redhousespice.com/scallion-flower-rolls/",
+      "https://redhousespice.com/jian-bing-chinese-crepes/",
+      "https://redhousespice.com/egg-scallion-crepe/"
+    ]
+  },
+  "Lunch": {
+    "French": [
+      "https://www.delish.com/cooking/recipe-ideas/a44297/easy-french-onion-soup-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/a28845919/beef-bourguignon-recipe/"
+    ],
+    "Japanese": [
+      "https://www.justonecookbook.com/oyakodon/",
+      "https://www.justonecookbook.com/easy-fried-rice/",
+      "https://www.justonecookbook.com/onigiri-rice-balls/",
+      "https://www.justonecookbook.com/zosui-japanese-rice-soup/"
+    ],
+    "Thai": [
+      "https://www.tasteofhome.com/recipes/pork-satay/",
+      "https://www.tasteofhome.com/article/how-to-make-bubble-tea/",
+      "https://www.tasteofhome.com/recipes/larb-gai/"
+    ],
+    "Indian": [
+      "https://www.indianhealthyrecipes.com/cabbage-fried-rice-cabbage-rice/",
+      "https://www.indianhealthyrecipes.com/aloo-gobi-recipe/",
+      "https://www.indianhealthyrecipes.com/aloo-methi-paratha/"
+    ],
+    "Mexican": [
+      "https://www.delish.com/cooking/recipe-ideas/a42958810/easy-gorditas-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/a42398992/grilled-chicken-street-tacos-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/a43066495/sopes-recipe/"
+    ],
+    "Canadian": [
+      "https://growagoodlife.com/tourtiere/",
+      "https://www.girlversusdough.com/montreal-bagels/",
+      "https://www.thespruceeats.com/slow-cooker-split-pea-soup-recipe-3055797"
+    ],
+    "Italian": [
+      "https://anitalianinmykitchen.com/caprese-appetizers/",
+      "https://anitalianinmykitchen.com/caprese-salad-recipe/",
+      "https://anitalianinmykitchen.com/asparagus-quiche/"
+    ],
+    "Chinese": [
+      "https://www.allrecipes.com/copycat-panda-express-chow-mein-recipe-7556785",
+      "https://www.allrecipes.com/recipe/246187/chicken-in-garlic-and-black-bean-sauce/",
+      "https://www.allrecipes.com/recipe/223156/shrimp-with-broccoli-in-garlic-sauce/"
+    ]
+  },
+  "Dinner": {
+    "French": [
+      "https://www.foodandwine.com/recipes/bacon-cheddar-and-onion-quiche",
+      "https://www.foodandwine.com/bouillabaisse-ludo-lefebvre"
+    ],
+    "Japanese": [
+      "https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-katsu-9840942",
+      "https://www.foodnetwork.com/recipes/food-network-kitchen/tamagoyaki-11398123",
+      "https://www.foodnetwork.com/recipes/food-network-kitchen/spiced-edamame-recipe-3361500",
+      "https://www.foodnetwork.com/recipes/food-network-kitchen/salmon-kushiyaki-9876806"
+    ],
+    "Thai": [
+      "https://www.delicious.com.au/recipes/thai-chicken-meatballs/ulXpnxes?r=recipes/collections/9bmjz8qs",
+      "https://www.delicious.com.au/recipes/thai-yellow-cauliflower-snake-bean-tofu-curry/jhtqm3fp?r=recipes/collections/9bmjz8qs",
+      "https://www.delicious.com.au/recipes/thai-style-green-peppercorn-beef-stir-fry-recipe/vilsuyw3?r=recipes/collections/9bmjz8qs"
+    ],
+    "Indian": [
+      "https://www.indianveggiedelight.com/restaurant-style-paneer-butter-masala/",
+      "https://www.indianveggiedelight.com/palak-tofu-instant-pot/",
+      "https://www.indianveggiedelight.com/potato-masala/"
+    ],
+    "Mexican": [
+      "https://www.tasteofhome.com/recipes/tasty-burritos/",
+      "https://www.tasteofhome.com/recipes/vegetarian-skillet-enchiladas/",
+      "https://www.tasteofhome.com/recipes/chili-stuffed-poblano-peppers/"
+    ],
+    "Canadian": [
+      "https://www.tasteofhome.com/recipes/sticky-honey-chicken-wings/",
+      "https://www.tasteofhome.com/recipes/oven-fried-potatoes/",
+      "https://www.tasteofhome.com/recipes/cheddar-ham-oven-omelet/"
+    ],
+    "Italian": [
+      "https://www.delish.com/cooking/recipe-ideas/a25964484/white-pizza-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/a39205292/gnudi-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/recipes/a51451/easy-chicken-parmesan-recipe/"
+    ],
+    "Chinese": [
+      "https://www.delish.com/cooking/recipe-ideas/a28929402/pot-stickers-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/recipes/a46827/beef-and-broccoli-stir-fry-recipe/",
+      "https://www.delish.com/cooking/recipe-ideas/recipes/a46821/general-tsos-chicken-stir-fry-recipe/"
+    ]
+  },
+  "Dessert": {
+    "French": [
+      "https://www.tasteofhome.com/recipes/palmiers/",
+      "https://www.tasteofhome.com/recipes/french-hot-chocolate/"
+    ],
+    "Japanese": [
+      "https://www.justonecookbook.com/warabi-mochi/",
+      "https://www.justonecookbook.com/green-tea-white-chocolate-cookies/",
+      "https://www.justonecookbook.com/anmitsu/"
+    ],
+    "Thai": [
+      "https://www.thespruceeats.com/make-exotic-fruit-salad-for-party-3217327",
+      "https://www.thespruceeats.com/sweet-sticky-rice-cake-3217337",
+      "https://www.thespruceeats.com/homemade-coconut-ice-cream-3217352"
+    ],
+    "Indian": [
+      "https://www.indianhealthyrecipes.com/gulab-jamun-recipe-using-milk-powder/",
+      "https://www.indianhealthyrecipes.com/rasgulla-recipe-bengali-rasgulla-recipe-easy-diwali-sweet-recipe/",
+      "https://www.playfulcooking.com/dessert/mishti-doisweetened-yogurt/"
+    ],
+    "Mexican": [
+      "https://www.allrecipes.com/recipe/7399/tres-leches-milk-cake/",
+      "https://www.allrecipes.com/how-to-make-arroz-con-leche-recipe-7507398",
+      "https://www.allrecipes.com/churro-cheesecake-bars-recipe-7554374"
+    ],
+    "Canadian": [
+      "https://livforcake.com/no-bake-nanaimo-bars/",
+      "https://www.sugarandsoul.co/cinnamon-sugar-bannock-recipe/",
+      "https://noshingwiththenolands.com/easy-butter-tarts/"
+    ],
+    "Italian": [
+      "https://www.foodandwine.com/recipes/strawberry-gelato",
+      "https://www.foodandwine.com/recipes/chocolate-and-pistachio-biscotti-kevin-sbraga",
+      "https://www.foodandwine.com/recipes/zabaglione-with-strawberries"
+    ],
+    "Chinese": [
+      "https://bravocooking.com/chinese-almond-jelly/",
+      "https://www.adailyfood.com/chinese-red-bean-paste-buns/",
+      "https://www.justonecookbook.com/almond-cookies/"
+    ]
+  }
+}

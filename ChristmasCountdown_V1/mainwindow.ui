@@ -17,20 +17,20 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>250</x>
       <y>300</y>
       <width>301</width>
-      <height>81</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
       <width>301</width>
-      <height>81</height>
+      <height>71</height>
      </size>
     </property>
     <property name="text">
-     <string>What's on for today?</string>
+     <string>What's on Fod Today?</string>
     </property>
    </widget>
   </widget>

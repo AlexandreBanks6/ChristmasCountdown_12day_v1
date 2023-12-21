@@ -10,7 +10,6 @@
 #include <QGraphicsVideoItem>
 #include <ctime>
 
-
 namespace Ui {
 class Day1Window;
 }
@@ -23,29 +22,20 @@ class Day1Window : public QDialog
     bool isPaused=false;
     int NUMBEROFVIDEOS=12;
 
-
 public:
     explicit Day1Window(QWidget *parent = nullptr);
     ~Day1Window();
     QString day_extension(int day);
     QString catvideo_display(int videonum);
-    //void delay(int milliseconds);
 
 private slots:
     void on_start_day1_clicked();
-
-    //void new_video();
-    //void on_play_day1_clicked();
-
-    //void on_pause_day1_clicked();
 
 private:
     Ui::Day1Window *ui;
     QMediaPlayer* player;
     QVideoWidget* vw;
     QAudioOutput* audioOutput = new QAudioOutput(this);
-
-
 };
 
 #endif // DAY1WINDOW_H
