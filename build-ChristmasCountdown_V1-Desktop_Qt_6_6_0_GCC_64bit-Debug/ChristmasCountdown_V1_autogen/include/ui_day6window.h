@@ -30,7 +30,7 @@ public:
     {
         if (Day6Window->objectName().isEmpty())
             Day6Window->setObjectName("Day6Window");
-        Day6Window->resize(400, 300);
+        Day6Window->resize(338, 300);
         verticalLayout = new QVBoxLayout(Day6Window);
         verticalLayout->setObjectName("verticalLayout");
         day6_title_label = new QLabel(Day6Window);

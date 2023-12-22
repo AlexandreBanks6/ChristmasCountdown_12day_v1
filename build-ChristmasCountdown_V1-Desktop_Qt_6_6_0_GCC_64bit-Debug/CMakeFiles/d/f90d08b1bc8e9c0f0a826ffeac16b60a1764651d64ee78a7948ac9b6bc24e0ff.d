@@ -1,5 +1,7 @@
 ChristmasCountdown_V1_autogen/timestamp: \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/CMakeLists.txt \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day10window.cpp \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day10window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day1window.cpp \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day1window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day2window.cpp \
@@ -1371,6 +1373,7 @@ ChristmasCountdown_V1_autogen/timestamp: \
   /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake \
   /usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake \
   /usr/local/lib/cmake/opencv4/OpenCVModules.cmake \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day10window.ui \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day1window.ui \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day2window.ui \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day3window.ui \
