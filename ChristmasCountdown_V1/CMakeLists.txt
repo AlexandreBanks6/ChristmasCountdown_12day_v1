@@ -8,11 +8,16 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(OpenCV_DIR ${CMAKE_SOURCE_DIR}/../Include/opencv) # Adjust this path accordingly
+
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 find_package(Qt6 REQUIRED COMPONENTS MultimediaWidgets)
+#find_package(OpenCV REQUIRED)
+find_package(OpenCV REQUIRED PATHS ${OpenCV_DIR})
+
 find_package(OpenSSL REQUIRED)
 set(PROJECT_SOURCES
         main.cpp
@@ -29,6 +34,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         day2window.cpp day2window.h day2window.ui day3window.cpp day3window.h day3window.ui
         day1window.h day1window.cpp
         day1window.ui
+        day5window.h day5window.cpp day5window.ui
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -53,6 +59,8 @@ target_link_libraries(ChristmasCountdown_V1 PRIVATE Qt${QT_VERSION_MAJOR}::Widge
 target_link_libraries(ChristmasCountdown_V1 PRIVATE Qt${QT_VERSION_MAJOR}::Multimedia)
 target_link_libraries(ChristmasCountdown_V1 PUBLIC Qt${QT_VERSION_MAJOR}::MultimediaWidgets)
 target_link_libraries(ChristmasCountdown_V1 PUBLIC OpenSSL::SSL)
+target_link_libraries(ChristmasCountdown_V1 PUBLIC ${OpenCV_LIBS})
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.

@@ -21,8 +21,11 @@ void MainWindow::on_pushButton_clicked()
     //day2_window=new day2window(this);
     //day2_window->show();
 
-    day3_window=new Day3Window(this);
-    day3_window->show();
+    //day3_window=new Day3Window(this);
+    //day3_window->show();
+
+    day5_window=new Day5Window(this);
+    day5_window->show();
 
 
 }
