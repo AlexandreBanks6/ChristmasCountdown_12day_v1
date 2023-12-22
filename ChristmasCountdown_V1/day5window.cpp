@@ -11,7 +11,7 @@ Day5Window::Day5Window(QWidget *parent) :
     ui->day5_title_label->setText("<font color='black'>Day 5: Spirit Animal Converter");
 
 
-        //Setting background of window
+    //Setting background of window
     QPixmap bkgnd("../Resources/BackgroundImages/day5_background.jpg");
     bkgnd = bkgnd.scaled(this->size(), Qt::KeepAspectRatio);
     QPalette palette;
