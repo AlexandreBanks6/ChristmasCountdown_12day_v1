@@ -567,6 +567,18 @@
 			null
 		],
 		[
+			"/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day8window.h",
+			"MU",
+			"EWIEGA46WW/moc_day8window.cpp",
+			null
+		],
+		[
+			"/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day9window.h",
+			"MU",
+			"EWIEGA46WW/moc_day9window.cpp",
+			null
+		],
+		[
 			"/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -674,6 +686,16 @@
 		],
 		[
 			"/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day6window.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day8window.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day9window.cpp",
 			"MU",
 			null
 		],

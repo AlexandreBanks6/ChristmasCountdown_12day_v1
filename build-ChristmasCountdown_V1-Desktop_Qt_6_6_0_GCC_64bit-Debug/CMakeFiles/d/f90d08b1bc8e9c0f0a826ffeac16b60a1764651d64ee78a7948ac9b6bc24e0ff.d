@@ -14,6 +14,10 @@ ChristmasCountdown_V1_autogen/timestamp: \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day5window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day6window.cpp \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day6window.h \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day8window.cpp \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day8window.h \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day9window.cpp \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day9window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/main.cpp \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/mainwindow.cpp \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/mainwindow.h \
@@ -1380,5 +1384,7 @@ ChristmasCountdown_V1_autogen/timestamp: \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day4window.ui \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day5window.ui \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day6window.ui \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day8window.ui \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day9window.ui \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/mainwindow.ui \
   /home/letsgo/Qt/Tools/CMake/bin/cmake

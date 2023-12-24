@@ -30,8 +30,10 @@ void MainWindow::on_pushButton_clicked()
     //day5_window->show();
     //day6_window=new Day6Window(this);
     //day6_window->show();
-    day10_window=new Day10Window(this);
-    day10_window->show();
+    day8_window=new Day8Window(this);
+    day8_window->show();
+    //day10_window=new Day10Window(this);
+    //day10_window->show();
 
 
 }

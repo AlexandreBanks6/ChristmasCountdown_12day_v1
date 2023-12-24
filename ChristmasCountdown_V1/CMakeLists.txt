@@ -38,6 +38,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         day4window.h day4window.cpp day4window.ui
         day6window.h day6window.cpp day6window.ui
         day10window.h day10window.cpp day10window.ui
+        day8window.h day8window.cpp day8window.ui
+        day9window.h day9window.cpp day9window.ui
 
     )
 # Define target properties for Android with Qt 6 as:

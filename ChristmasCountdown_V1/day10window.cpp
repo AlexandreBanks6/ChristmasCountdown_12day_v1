@@ -43,7 +43,7 @@ void Day10Window::on_day10_toggle_button_clicked()
     for(int i=1;i<=MAXNUMBEROFPICTURES;i++)
     {
         QString text=in.readLine();
-        qInfo()<<"In for loop with i="<<QString::number(i);
+        //qInfo()<<"In for loop with i="<<QString::number(i);
         if(i==picture_num)
         {
             ui->day10_place_description_label->setText(text);
