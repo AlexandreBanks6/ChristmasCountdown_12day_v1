@@ -6,44 +6,52 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>432</width>
-    <height>332</height>
+    <width>573</width>
+    <height>434</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="day10_title_label">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>378</width>
-     <height>91</height>
-    </rect>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>30</number>
    </property>
-   <property name="maximumSize">
-    <size>
-     <width>400</width>
-     <height>100</height>
-    </size>
+   <property name="topMargin">
+    <number>30</number>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-     <bold>true</bold>
-    </font>
+   <property name="rightMargin">
+    <number>30</number>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
+   <property name="bottomMargin">
+    <number>30</number>
    </property>
-   <property name="text">
-    <string>Day 11: Open up gift labeled day 11. You might be feeling like having high tea after this one ;)</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
+   <item row="0" column="0">
+    <widget class="QLabel" name="day11_title_label">
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>Day 11: Open up gift labeled day 11. You might feel like having soup after this one;)</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

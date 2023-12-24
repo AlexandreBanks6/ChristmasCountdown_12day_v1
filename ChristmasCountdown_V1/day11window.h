@@ -3,6 +3,14 @@
 
 #include <QDialog>
 
+#include <QMediaPlayer>
+#include <QVideoWidget>
+#include <QtMultimedia>
+#include <QDebug>
+#include <QGridLayout>
+#include <QGraphicsVideoItem>
+#include <ctime>
+
 namespace Ui {
 class Day11Window;
 }
@@ -17,6 +25,10 @@ public:
 
 private:
     Ui::Day11Window *ui;
+
+    QMediaPlayer* player;
+    QVideoWidget* vw;
+    QAudioOutput* audioOutput = new QAudioOutput(this);
 };
 
 #endif // DAY11WINDOW_H

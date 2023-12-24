@@ -1,6 +1,7 @@
 /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/build-ChristmasCountdown_V1-Desktop_Qt_6_6_0_GCC_64bit-Debug/ChristmasCountdown_V1_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/mainwindow.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/build-ChristmasCountdown_V1-Desktop_Qt_6_6_0_GCC_64bit-Debug/ChristmasCountdown_V1_autogen/moc_predefs.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day10window.h \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day11window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day1window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day2window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day3window.h \

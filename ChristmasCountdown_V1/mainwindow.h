@@ -11,6 +11,8 @@
 #include "day7window.h"
 #include "day8window.h"
 #include "day10window.h"
+#include "day11window.h"
+#include "day12window.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -38,6 +40,8 @@ private:
     Day7Window *day7_window;
     Day8Window *day8_window;
     Day10Window *day10_window;
+    Day11Window *day11_window;
+    Day12Window *day12_window;
 
 
 };
