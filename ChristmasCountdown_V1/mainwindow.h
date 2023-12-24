@@ -8,6 +8,7 @@
 #include "day4window.h"
 #include "day5window.h"
 #include "day6window.h"
+#include "day7window.h"
 #include "day8window.h"
 #include "day10window.h"
 
@@ -34,6 +35,7 @@ private:
     Day4Window *day4_window;
     Day5Window *day5_window;
     Day6Window *day6_window;
+    Day7Window *day7_window;
     Day8Window *day8_window;
     Day10Window *day10_window;
 

@@ -6,6 +6,7 @@
 #include "EWIEGA46WW/moc_day4window.cpp"
 #include "EWIEGA46WW/moc_day5window.cpp"
 #include "EWIEGA46WW/moc_day6window.cpp"
+#include "EWIEGA46WW/moc_day7window.cpp"
 #include "EWIEGA46WW/moc_day8window.cpp"
 #include "EWIEGA46WW/moc_day9window.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
