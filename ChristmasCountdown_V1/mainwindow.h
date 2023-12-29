@@ -10,6 +10,7 @@
 #include "day6window.h"
 #include "day7window.h"
 #include "day8window.h"
+#include "day9window.h"
 #include "day10window.h"
 #include "day11window.h"
 #include "day12window.h"
@@ -39,6 +40,7 @@ private:
     Day6Window *day6_window;
     Day7Window *day7_window;
     Day8Window *day8_window;
+    Day9Window *day9_window;
     Day10Window *day10_window;
     Day11Window *day11_window;
     Day12Window *day12_window;

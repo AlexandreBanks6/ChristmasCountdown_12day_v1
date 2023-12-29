@@ -11,6 +11,7 @@
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day6window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day7window.h \
   /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day8window.h \
+  /home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/ChristmasCountdown_V1/day9window.h \
   /home/letsgo/Qt/6.6.0/gcc_64/include/QtCore/QByteArray \
   /home/letsgo/Qt/6.6.0/gcc_64/include/QtCore/QCryptographicHash \
   /home/letsgo/Qt/6.6.0/gcc_64/include/QtCore/QDeadlineTimer \

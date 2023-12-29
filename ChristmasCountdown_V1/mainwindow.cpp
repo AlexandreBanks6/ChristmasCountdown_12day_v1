@@ -35,13 +35,16 @@ void MainWindow::on_pushButton_clicked()
 
     //day8_window=new Day8Window(this);
     //day8_window->show();
+
+    day9_window=new Day9Window(this);
+    day9_window->show();
     //day10_window=new Day10Window(this);
     //day10_window->show();
     //day11_window=new Day11Window(this);
     //day11_window->show();
 
-    day12_window=new Day12Window(this);
-    day12_window->show();
+    //day12_window=new Day12Window(this);
+    //day12_window->show();
 
 
 }

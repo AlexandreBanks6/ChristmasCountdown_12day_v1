@@ -7,21 +7,29 @@ Day9Window::Day9Window(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //Set up cascade classifier stuff:
-    if(!faceCascade.load("../Include/opencv/data/haarcascades/haarcascade_frontalface_default.xml"))
-    {
-        qInfo()<<"Error in loading haar cascade";
-    }
+    ui->day9_title_label->setStyleSheet("QLabel { background-color : lightgreen}");
+    ui->day9_title_label->setText("<font color='black'>Day 9: Some things for your road trip across Canada!!!");
+    ui->label->setStyleSheet("QLabel { background-color : lightgreen}");
+    ui->label->setText("<font color='black'>I thought it would be fun for you to have some tunes and a good book for your cross-country adventure! Open up the package labeled day 9, it's a book with deets on all the provinces as well as animals and wildlife in Canada. Sorry that it is old, but I thought it could be fun for you to have. Also, click the button below to get a link to a spotify playlist I made for your road trip (I tried to keep most of them as Canadian artists). One of the tunes should be playing right now as a preview!");
 
-    //Set up images of goat/lizard
-    goatImage=cv::imread("../Resources/goat.jpeg");
-    lizardImage=cv::imread("../Resources/lizard.jpeg");
-    if (goatImage.empty()||lizardImage.empty()) {
-        // Either the goat image or lizard image is not there
-        qInfo() << "Either the goat image or lizard image is not there";
-        return;
-    }
+    //Setting background of window
+    QPixmap bkgnd("../Resources/BackgroundImages/day9_background.jpg");
+    bkgnd = bkgnd.scaled(this->size(), Qt::KeepAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Window, bkgnd);
+    this->setPalette(palette);
 
+    //Starting music
+    player=new QMediaPlayer;
+    audioOutput = new QAudioOutput;
+
+    player->setAudioOutput(audioOutput);
+
+    player->setSource(QUrl::fromLocalFile("../Resources/AudioFiles/day9_audio.mp3"));
+
+    audioOutput->setVolume(50);
+    player->setLoops(-1);
+    player->play();
 
 }
 
@@ -30,33 +38,8 @@ Day9Window::~Day9Window()
     delete ui;
 }
 
-void Day9Window::on_day9_startgame_button_clicked()
+void Day9Window::on_pushButton_clicked()
 {
-    //Initializes the game if it is not already started
-    if(!game_started)
-    {
-        game_started=true;
-        //Starts the camera
-        capture.open(0);
-        if (!capture.isOpened()){
-            qInfo()<<"Error in capture";
-
-        }
-        //Sets the target locations
-        int w=ui->day9_video_output_label->width();
-        int h=ui->day9_video_output_label->height();
-
-        QRandomGenerator::global()->bounded(10,w-20);
-        QRandomGenerator::global()->bounded(10,h-20);
-
-        //Starts the timer
-
-
-    }
-}
-
-void Day9Window::updateFrame()
-{
-
+    ui->link_browser->setText("https://open.spotify.com/playlist/3H5H1Wu1XZQeQ0dsiq46y7?si=300ed58e3a0446af");
 }
 
