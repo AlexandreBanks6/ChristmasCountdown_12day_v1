@@ -30,6 +30,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_day_spinBox_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
     Day1Window *day1_window;
@@ -44,6 +46,9 @@ private:
     Day10Window *day10_window;
     Day11Window *day11_window;
     Day12Window *day12_window;
+
+    QMediaPlayer *player;
+    QAudioOutput* audioOutput = new QAudioOutput;
 
 
 };
