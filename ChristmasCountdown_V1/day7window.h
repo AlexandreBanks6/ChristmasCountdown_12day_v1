@@ -25,6 +25,7 @@ public:
 
 private slots:
     void on_day7_button_clicked();
+    void stopPlayer();
 
 private:
     Ui::Day7Window *ui;

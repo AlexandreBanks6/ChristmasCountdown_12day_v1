@@ -40,10 +40,16 @@ Day11Window::Day11Window(QWidget *parent) :
     player->setLoops(-1);
     vw->show();
     player->play();
+    connect(this, &QDialog::finished, this, &Day11Window::stopPlayer);
 
 }
 
 Day11Window::~Day11Window()
 {
     delete ui;
+}
+
+void Day11Window::stopPlayer()
+{
+    player->stop();
 }

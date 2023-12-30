@@ -95,3 +95,5 @@ install(TARGETS ChristmasCountdown_V1
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(ChristmasCountdown_V1)
 endif()
+
+

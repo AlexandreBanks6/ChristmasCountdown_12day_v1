@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>683</width>
-    <height>576</height>
+    <width>899</width>
+    <height>622</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
     <widget class="QLabel" name="label_3">
      <property name="maximumSize">
       <size>
-       <width>200</width>
+       <width>250</width>
        <height>100</height>
       </size>
      </property>
@@ -43,7 +43,7 @@
     <widget class="QLabel" name="label">
      <property name="maximumSize">
       <size>
-       <width>200</width>
+       <width>250</width>
        <height>100</height>
       </size>
      </property>
@@ -59,7 +59,7 @@
     <widget class="QLabel" name="label_4">
      <property name="maximumSize">
       <size>
-       <width>200</width>
+       <width>250</width>
        <height>100</height>
       </size>
      </property>
@@ -75,7 +75,7 @@
     <widget class="QLabel" name="label_2">
      <property name="maximumSize">
       <size>
-       <width>200</width>
+       <width>250</width>
        <height>100</height>
       </size>
      </property>
@@ -92,7 +92,7 @@
      <property name="maximumSize">
       <size>
        <width>250</width>
-       <height>200</height>
+       <height>300</height>
       </size>
      </property>
      <property name="font">

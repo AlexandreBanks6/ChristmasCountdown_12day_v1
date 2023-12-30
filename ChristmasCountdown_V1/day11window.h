@@ -23,6 +23,9 @@ public:
     explicit Day11Window(QWidget *parent = nullptr);
     ~Day11Window();
 
+private slots:
+    void stopPlayer();
+
 private:
     Ui::Day11Window *ui;
 

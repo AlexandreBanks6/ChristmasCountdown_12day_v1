@@ -30,6 +30,7 @@ public:
 
 private slots:
     void on_start_day1_clicked();
+    void stopPlayer();
 
 private:
     Ui::Day1Window *ui;

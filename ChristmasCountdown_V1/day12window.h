@@ -25,6 +25,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void stopPlayer();
 
 private:
     Ui::Day12Window *ui;

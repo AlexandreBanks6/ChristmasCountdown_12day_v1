@@ -27,6 +27,7 @@ Day12Window::Day12Window(QWidget *parent) :
 
     player->setAudioOutput(audioOutput);
     player->setVideoOutput(vw);
+    connect(this, &QDialog::finished, this, &Day12Window::stopPlayer);
 }
 
 Day12Window::~Day12Window()
@@ -58,5 +59,10 @@ void Day12Window::on_pushButton_clicked()
     palette.setBrush(QPalette::Window, bkgnd);
     this->setPalette(palette);
 
+}
+
+void Day12Window::stopPlayer()
+{
+    player->stop();
 }
 

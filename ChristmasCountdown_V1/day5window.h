@@ -28,6 +28,7 @@ public:
     ~Day5Window();
 private slots:
     void updateFrame();
+    void stopVideo();
 
 private:
     Ui::Day5Window *ui;

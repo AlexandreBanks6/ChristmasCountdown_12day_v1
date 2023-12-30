@@ -56,9 +56,16 @@ Day8Window::Day8Window(QWidget *parent) :
     player->setLoops(-1);
     vw->show();
     player->play();
+
+    connect(this, &QDialog::finished, this, &Day8Window::stopPlayer);
 }
 
 Day8Window::~Day8Window()
 {
     delete ui;
+}
+
+void Day8Window::stopPlayer()
+{
+    player->stop();
 }

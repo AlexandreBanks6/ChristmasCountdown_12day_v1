@@ -31,6 +31,8 @@ Day7Window::Day7Window(QWidget *parent) :
 
     player->setAudioOutput(audioOutput);
     player->setVideoOutput(vw);
+
+    connect(this, &QDialog::finished, this, &Day7Window::stopPlayer);
 }
 
 Day7Window::~Day7Window()
@@ -60,5 +62,10 @@ void Day7Window::on_day7_button_clicked()
     QPalette palette;
     palette.setBrush(QPalette::Window, bkgnd);
     this->setPalette(palette);
+}
+
+void Day7Window::stopPlayer()
+{
+    player->stop();
 }
 

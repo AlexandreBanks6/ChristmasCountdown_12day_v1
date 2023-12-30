@@ -1,0 +1,21 @@
+# ninja log v5
+1047	4670	1703907142832776541	CMakeFiles/ChristmasCountdown_V1.dir/day11window.cpp.o	73070c4f25be81d3
+1047	4739	1703907142900774841	CMakeFiles/ChristmasCountdown_V1.dir/day7window.cpp.o	70b36fc4399c92d8
+1046	3967	1703907142128794153	CMakeFiles/ChristmasCountdown_V1.dir/day5window.cpp.o	2d5f9ec57bd8cd63
+1046	3047	1703907141208817169	CMakeFiles/ChristmasCountdown_V1.dir/day3window.cpp.o	ce014258d415379c
+1046	2825	1703907140988822673	CMakeFiles/ChristmasCountdown_V1.dir/day4window.cpp.o	b05f500c2f7f9a6
+1047	2964	1703907141124819271	CMakeFiles/ChristmasCountdown_V1.dir/day6window.cpp.o	d1f8f61f5c1b01cd
+1045	5644	1703907143804752224	CMakeFiles/ChristmasCountdown_V1.dir/ChristmasCountdown_V1_autogen/mocs_compilation.cpp.o	2346f78cbf1cca1e
+1045	5910	1703907144072745520	CMakeFiles/ChristmasCountdown_V1.dir/mainwindow.cpp.o	bb3390c550ccf530
+1046	2149	1703907140312839586	CMakeFiles/ChristmasCountdown_V1.dir/day2window.cpp.o	da2a00ba8a3cd846
+1047	2822	1703907140984822773	CMakeFiles/ChristmasCountdown_V1.dir/day10window.cpp.o	b48864a6275ffe41
+1048	5724	1703907143884750222	CMakeFiles/ChristmasCountdown_V1.dir/day9window.cpp.o	a883d34dbf6cfb2f
+1046	5585	1703907143744753725	CMakeFiles/ChristmasCountdown_V1.dir/day1window.cpp.o	f12a2e81d9fe6563
+1047	5543	1703907143704754726	CMakeFiles/ChristmasCountdown_V1.dir/day8window.cpp.o	bee1e7673544e931
+1045	5018	1703907143176767935	CMakeFiles/ChristmasCountdown_V1.dir/main.cpp.o	14f8f66f43bb6f90
+0	1045	1703907139204867305	/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/build-ChristmasCountdown_V1-Desktop_Qt_6_6_0_GCC_64bit-MinSizeRel/ChristmasCountdown_V1_autogen/mocs_compilation.cpp	b2d321598d1ef0a
+5910	6254	1703907144412737013	ChristmasCountdown_V1	705ef4efbf614253
+0	1045	1703907139204867305	ChristmasCountdown_V1_autogen/timestamp	b2d321598d1ef0a
+0	1045	1703907139204867305	ChristmasCountdown_V1_autogen/mocs_compilation.cpp	b2d321598d1ef0a
+1048	4732	1703907142892775040	CMakeFiles/ChristmasCountdown_V1.dir/day12window.cpp.o	60953b00a163dd62
+0	1045	1703907139204867305	/home/letsgo/Documents/Qt_Practice/ChristmasCountdown_12day_v1/build-ChristmasCountdown_V1-Desktop_Qt_6_6_0_GCC_64bit-MinSizeRel/ChristmasCountdown_V1_autogen/timestamp	b2d321598d1ef0a

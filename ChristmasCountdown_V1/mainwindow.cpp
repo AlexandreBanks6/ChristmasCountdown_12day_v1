@@ -39,10 +39,12 @@ MainWindow::MainWindow(QWidget *parent)
     player->setLoops(-1);
     player->play();
 
+
 }
 
 MainWindow::~MainWindow()
 {
+    player->stop();
     delete ui;
 }
 
@@ -122,4 +124,5 @@ void MainWindow::on_day_spinBox_valueChanged(int arg1)
     ui->lcdNumber->display(day_number);
     ui->progressBar->setValue(perc_number);
 }
+
 

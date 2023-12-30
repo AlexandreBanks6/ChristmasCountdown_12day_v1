@@ -44,6 +44,8 @@ Day1Window::Day1Window(QWidget *parent) :
 
     player->setAudioOutput(audioOutput);
     player->setVideoOutput(vw);
+
+    connect(this, &QDialog::finished, this, &Day1Window::stopPlayer);
 }
 
 Day1Window::~Day1Window()
@@ -176,5 +178,10 @@ void Day1Window::on_start_day1_clicked()
 
 
     }
+}
+
+void Day1Window::stopPlayer()
+{
+    player->stop();
 }
 

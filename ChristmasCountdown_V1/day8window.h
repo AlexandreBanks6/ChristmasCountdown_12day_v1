@@ -22,6 +22,8 @@ class Day8Window : public QDialog
 public:
     explicit Day8Window(QWidget *parent = nullptr);
     ~Day8Window();
+private slots:
+    void stopPlayer();
 
 private:
     Ui::Day8Window *ui;

@@ -31,6 +31,8 @@ Day9Window::Day9Window(QWidget *parent) :
     player->setLoops(-1);
     player->play();
 
+    connect(this, &QDialog::finished, this, &Day9Window::stopPlayer);
+
 }
 
 Day9Window::~Day9Window()
@@ -41,5 +43,10 @@ Day9Window::~Day9Window()
 void Day9Window::on_pushButton_clicked()
 {
     ui->link_browser->setText("https://open.spotify.com/playlist/3H5H1Wu1XZQeQ0dsiq46y7?si=300ed58e3a0446af");
+}
+
+void Day9Window::stopPlayer()
+{
+    player->stop();
 }
 

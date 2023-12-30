@@ -46,6 +46,7 @@ Day5Window::Day5Window(QWidget *parent) :
     timer=new QTimer(this);
     //Connecting timer to the updateFrame slot:
     connect(timer, SIGNAL(timeout()), this, SLOT(updateFrame()));
+    connect(this, &QDialog::finished, this, &Day5Window::stopVideo);
     timer->start(10); //Update every 10 milliseconds
 
 }
@@ -128,5 +129,13 @@ void Day5Window::updateFrame()
     qImg = qImg.rgbSwapped();
     // Display the frame in QLabel or QGraphicsView
     ui->videostream_label->setPixmap(QPixmap::fromImage(qImg));
+
+}
+
+void Day5Window::stopVideo()
+{
+    capture.release();
+    timer->stop();
+    timer->disconnect();
 
 }
